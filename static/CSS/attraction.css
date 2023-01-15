@@ -1,0 +1,327 @@
+.main{
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    margin: 40px auto;
+}
+.img{
+    width: 540px;
+    height: 400px;
+    margin: 0px auto 0px 15px;
+}
+.page{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    /* margin: 0px auto 0px 15px; */
+    position: relative;
+    
+}
+.left{
+    width: 36px;
+    height: 36px;
+    margin:auto 0px auto 10px;
+    cursor: pointer;
+}
+.right{
+    width: 36px;
+    height: 36px;
+    margin:auto 10px auto  0px;
+    cursor: pointer;
+}
+.bottom{
+    width: auto;
+    height: 12px;
+    display: flex;
+    margin: auto auto 13px;
+}
+.circle{
+    width: 24px;
+    height: 12px;
+}
+.incircle{
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+}
+.pic{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    bottom: 400px;
+    object-fit: cover;
+    z-index: -1;
+}
+.set{
+    width: 600px;
+    height: 400px;
+    margin: 0px 15px auto 30px;
+}
+.name{
+    width: 600px;
+    height: 33px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #666666;
+}
+.mrtCat{
+    width: 600px;
+    height: 22px;
+    margin-bottom: 15px;
+    color: #666666;
+
+}
+.book_frame_text1{
+    width: 560px;height: 22px;
+    padding: 15px 20px;
+    color: #666666;
+
+}
+.book_frame_text2{
+    width: 560px;height: 24px;
+    margin: 0px 20px 15px;
+    color: #666666;
+
+}
+.bookFrame{
+    width: 600px;
+    height: 302px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}
+.date{
+    width: 560px;
+    height: 35px;
+    display: flex;
+}
+#start{
+    width: 193px;
+    height: 35px;
+    color: #666666;
+
+}
+.time{
+    width: 560px;
+    height: 22px;
+    display: flex;
+    margin: 15px 5px 25px 20px;
+}
+.select{
+    display: flex;
+}
+.price{
+    width: 560px;
+    height: 22px;
+    display: flex;
+    margin: 15px 5px 25px 20px;
+}
+.mor{
+    margin-left: 12px;
+    display: flex;
+}
+.aft{
+    margin-left: 18px;
+    display: flex;
+}
+.aftContainer, .morContainer{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    
+}
+.morBtnDiv, .aftBtnDiv{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.morBtnShow, .aftBtnShow{
+    display: flex;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #448899;
+}
+.morAft{
+    color: #666666;
+}
+.date_time_price1{
+    color: #666666;
+    margin: auto 20px auto 20px;
+}
+.date_time_price2{
+    /* margin: 15px 5px 25px 20px; */
+    color: #666666;
+
+}
+.date_time_price3{
+    /* margin: 15px 5px 25px 20px; */
+    color: #666666;
+
+}
+.priceMoney{
+    color: #666666;
+    width: 108px;
+    height: 14px;
+    margin-left: 5px;
+}
+
+.btn{
+    width: 154px;
+    height: 36px;
+    background-color: #448899;
+    margin: 25px auto 41px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #5599aa;
+}
+.btn:active {
+    transform: translateY(1px) scale(.98);
+}
+.btn>div{
+    width: 114px;
+    height: 16px;
+    padding: 10px 20px;
+    font-size: 19px;
+    line-height: 16px;
+    color:white;
+}
+hr{
+    width: 1200px;
+    color: #e8e8e8;
+}
+.mainContent{
+    width: 1200px;
+    height: 100%;
+    margin: 50px auto 40px;
+}
+.description{
+    width: 1180px;
+    height: auto;
+    font-size: 16px;
+    margin:auto;
+    color: #666666;
+    line-height: 23px;
+}
+.address,.transport{
+    width: 1180px;
+    height: 32px;
+    margin: 20px auto 0px;
+    color: #666666;
+}
+.addressCon, .transportCon{
+    width: 1180px;
+    height: 100%;
+    margin: 0px auto 0px;
+    color: #666666;
+    line-height: 23px;
+}
+footer{
+    width: 100%;
+    height: 104px;
+    background-color: #757575;
+    position: absolute;
+} 
+.text{
+    width: 234px;
+    height: 20px;
+    margin: auto;
+    padding: 45px;
+    color: #fff;
+}
+
+.incircle:hover {
+    background-color: #000;
+}
+.active{
+    background-color: #000;
+}
+
+@media(max-width:1200px){
+    .main{
+        width: 90%;
+    }
+    .set{
+        width: 100%;
+
+    }
+    .name, .mrtCat{
+        width: 100%;
+    }
+    .bookFrame{
+        width: 100%;
+    }
+    .book_frame_text1{
+        width: 80%;
+    }
+    .book_frame_text2{
+        width: 80%;
+        overflow: hidden;
+        word-break: break-all;
+        /* word-wrap: break-word; */
+    }
+    .date, .time, .price{
+        width: 90%;
+    }
+    .img{
+        /* flex: none; */
+        width: 100%;
+    }
+    hr{
+        width:90%
+    }
+    .mainContent{
+        width: 90%;
+    }
+    .description{
+        width: 100%;
+    }
+    .address, .transport{
+        width: 100%;
+    }
+    .addressCon, .transportCon{
+        width: 100%;
+    }
+}
+@media(max-width:979px){
+    .book_frame_text2{
+        height: 48px;
+    }
+}
+@media(max-width:765px){
+    .main{
+        display: inline;
+    }
+    .img{
+        margin: 0;
+    }
+    .set{
+        min-width: 340px;
+        width: 95%;
+        margin: 20px auto 40px;
+    }
+    .book_frame_text2{
+        width: 90%;
+        min-width: 300px;
+        height: 22px;
+        /* word-wrap: break-word; */
+    }
+}
+@media(max-width:430px){
+    .book_frame_text2{
+        height: 48px;
+    }
+}
+@media(max-width:360px){
+    .set{
+        width: 340px;
+        margin: 20px 10px 40px;
+    }
+}

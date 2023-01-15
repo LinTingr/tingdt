@@ -1,0 +1,69 @@
+{% extends "common.html" %}
+<head>
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="/CSS/booking.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/common.css">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+    <div class="headline">您好， <span class="username"></span> ，待預訂的行程如下：</div>
+    <div class="section">
+        <img src="/pic/icon_delete.png" class="delete">
+        <div class="image">
+            <img src="" class="book_img">
+        </div>
+        <div class="infor">
+            <div class="bookname">台北一日遊 : </div>
+            <div class="infor_div">
+                <div class="bookdate">日期 : </div>
+                <div class="infor_bookdate"></div>
+            </div>
+            <div class="infor_div">
+                <div class="booktime">時間 : </div>
+                <div class="infor_booktime"></div>
+            </div>
+            <div class="infor_div">
+                <div class="bookcost">費用 : </div>
+                <div class="infor_bookcost"></div>
+            </div>
+            <div class="infor_div">
+                <div class="booklocal">地點 : </div>
+                <div class="infor_booklocal"></div>
+            </div>
+        </div>
+    </div>
+    <hr class="booking_hr">
+    <div class="contact_form">
+        <div class="infor_contact_name">您的聯絡資訊</div>
+        <div class="infor_con"><div class="contact_name">聯絡姓名：</div><input type="text" class="contact_name_input"></div>
+        <div class="infor_con"><div class="contact_email">連絡信箱：</div><input type="text" class="contact_email_input"></div>
+        <div class="infor_con"><div class="contact_phone">手機號碼：</div><input type="text" class="contact_phone_input"></div>
+        <div class="contact_text">
+            請保持手機暢通，準時到達，導覽人員將用手機與您聯繫，務必留下正確的聯絡方式。
+        </div>
+    </div>
+    <hr class="booking_hr">
+    <div class="payment_form">
+        <div class="payment_information">信用卡付款資訊</div>
+        <div class="infor_con"><div class="payment_card">卡片號碼：</div>  <div class="payment_card_input tpfield" id="card-number" ></div><div class="cardResult"></div></div>
+        <div class="infor_con"><div class="payment_date">過期時間：</div>  <div class="payment_date_input tpfield" id="card-expiration-date" ></div><div class="expiryResult"></div></div>
+        <div class="infor_con"><div class="payment_verify">驗證密碼：</div><div class="payment_verify_input tpfield" id="card-ccv" ></div><div class="cvvResult"></div></div>
+    </div>
+    <hr class="booking_hr">
+    <div class="confirm">
+        <div class="confirm_price">總價：新台幣 2000 元</div>
+        <button class="confirm_btn"><div>確認訂購並付款</div></button>
+    </div>
+    <div class="no_booking" style="display:none">目前沒有任何待預訂的行程</div>
+    <footer class="footerNobooking" style="display:none ">
+        <div class="text"> COPYRIGHT © 2021 台北一日遊</div>
+    </footer>
+    {% endblock %}
+    {% block js %}
+    <script src="https://js.tappaysdk.com/sdk/tpdirect/v5.14.0"></script>
+    <script src="/javascript/common.js"></script>
+    <script src="/javascript/booking.js"></script>
+    {% endblock %}
+</body>
+</html>

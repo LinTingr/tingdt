@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台北一日遊</title>
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+    <div class="errorBack" style="display:none">
+        <div class="error">
+            <hr class="errorMessageTop">
+            <div class="errorMessageMain">
+                <img src="/pic/icon_close.png" width="16px" height="16xp" class="errorClose">
+                <div class="errorMessageText">請選擇日期</div>
+            </div>
+        </div>
+    </div>
+    <div class="signinBack" style="display: none;">
+        <div class="signinFrame">
+            <hr class="signinHr">
+            <div class="signinMain">
+                <div class="signinText">登入會員帳號<img src="/pic/icon_close.png" width="16px" height="16xp" class="close"></div>
+                <input type="text" class="accountSignin" placeholder="輸入電子信箱" required>
+                <input type="password" class="passwordSignin" placeholder="輸入密碼" required>
+                <div class="signinBtn"><div class="signinBtnText">登入帳號</div></div>
+                <div class="messageSignin"></div>
+                <div class="nosignin">還沒有帳戶？ <span class="inUp">點此註冊</span> </div>
+            </div>
+        </div>
+        <div class="signupFrame none">
+            <hr class="signupHr">
+            <div class="signupMain">
+                <div class="signupText">註冊會員帳號<img src="/pic/icon_close.png" width="16px" height="16xp" class="close"></div>
+                <input type="text" class="nameSignup" name="name" placeholder="輸入姓名" required>
+                <input type="text" class="accountSignup" name="account" placeholder="輸入電子信箱" required>
+                <input type="password" class="passwordSignup" name="password" placeholder="輸入密碼" required>
+                <div class="signupBtn"><div class="signupBtnText">註冊新帳戶</div></div>
+                <div class="messageSignup"></div>
+                <div class="nosignin">已經有帳戶？  <span class="inUp">點此登入</span> </div>
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <div class="titleAll">
+            <div class="titleHead"><a href="/">台北一日遊</a></div>
+            <div class="sign">
+                <div class="signlist">
+                    <span class="schedule"><img src = "/pic/shopping_icon.png" class="icon"><a href="/booking">預定行程</a></span>
+                    <span class="signinup">登入/註冊</span>
+                    <span class="MemberSystem none"><img src="/pic/member_icon.png" class="icon">會員系統<img src="/pic/down_icon.png" class="icon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="memberSystem" style="display: none;">
+            <div class="memberFrameSystem">
+                <div class="member"><a href="/member">會員中心</a></div>
+                <div class="history"><a href="/history">歷史訂單</a></div>
+                <div class="signout">登出</div>
+            </div>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer">
+        <div class="text"> COPYRIGHT © 2021 台北一日遊</div>
+    </footer>
+    {% block js %}
+    {% endblock %}
+</body>
+</html>

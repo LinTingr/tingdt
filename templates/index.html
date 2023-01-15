@@ -1,0 +1,37 @@
+{% extends "common.html" %}
+<head>
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="/CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/common.css">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+    <div class="mainback">
+        <img class ="img" src="pic/welcome.png" alt="">
+        <div class="sloganlist">
+            <div class="slogan">
+                <div style="font-size: 24px; color:#fff; text-shadow: 1px 2px #000;">輕鬆享受台北一日悠閒</div>
+                <div style="font-size: 16px; color:#fff; margin: 15px 0px 25px; text-shadow: 1px 1px #000;">探索每個角落，體驗城市的深度旅遊行程</div>
+                <div class="search">
+                    <div class="input">
+                        <div class="inputText" contenteditable="true" id="inputText" onkeydown="xx()" placeholder="輸入景點名稱查詢"></div>
+                        <!-- <input class="input_text" id="input_text" placeholder="輸入景點名稱查詢" value=""> -->
+                        <div class="searchBar" id="searchBar"  >
+                            <ul class="categorylist none" id="categorylist"></ul>
+                        </div>
+                    </div>
+                    <div class="searchBtn"><img src = "pic/icon_search.png" ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attractions">
+        <div class="attractionsGroup"></div>
+    </div>
+    {% endblock %}
+    {% block js %}
+    <script src="/javascript/common.js"></script>
+    <script src="/javascript/index.js"></script>
+    {% endblock %}
+</html>

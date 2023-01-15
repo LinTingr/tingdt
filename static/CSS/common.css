@@ -1,0 +1,323 @@
+body, ul, ol{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+.errorBack{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(60, 60, 60, 0.5);
+    z-index: 3;
+}
+.error{
+    width: 340px;
+    height: auto;
+    /* top: 80px; */
+    margin: 80px 550px;
+    position: absolute;
+    box-shadow: 0 4px 60px #aaaaaa;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.errorMessageTop{
+    border: 0;
+    margin: 0;
+    width: 340px;
+    height: 10px;
+    background: linear-gradient(270deg, #337788 0%, #66AABB 100%);
+    border-radius: 6px 6px 0px 0px;
+}
+.errorMessageMain{
+    width: 310px;
+    height: 100px;
+    margin: auto;
+}
+
+.errorMessageText{
+    width: 310px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px auto 0;
+    color: #666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.errorClose{
+    position: absolute;
+    right: 17px;
+    cursor: pointer;
+}
+.none{
+    display: none;
+}
+.link{
+    color:#000;
+    text-decoration: none;
+    width: 48%;
+    display: contents;
+} 
+.memberSystem{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+.memberFrameSystem{
+    width: 120px;
+    height: 123px;
+    /* border: 1px solid; */
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #757575;
+}
+.member, .history, .signout{
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid;
+}
+.member:hover, .history:hover, .signout:hover{
+    background-color: #e5e5e5;
+}
+.title{
+    width: 100%;
+    height: 54px;
+    position: sticky;
+    background-color: #fff;
+    top:0;
+    z-index: 2;
+    border-bottom: 1px solid #E8E8E8;
+}
+.titleAll{
+    width: 1200px;
+    height:54px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.titleHead{
+    width: 150px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    color:#448899;
+    font-size:30px;
+    font-weight: 700;
+    background-color: #fff;
+}
+.titleHead a{
+    text-decoration: none;
+    color: #448899;
+}
+.sign{
+    width: 220px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.signlist{
+    width: 230px;
+    height: 34px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+    flex: none;
+}
+.schedule{
+    width:90px;
+    height:22px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.schedule a{
+    text-decoration: none;
+    color:#000
+}
+.signinup, .MemberSystem{
+    width:120px;
+    height:22px;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.signinup:hover, .schedule:hover{
+    border-radius: 5px;
+    background-color: #e5e5e5;
+}
+.signinBack{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(60, 60, 60, 0.5);
+    z-index: 3;
+}
+.signinFrame{
+    width: 340px;
+    height: auto;
+    top: 80px;
+    /* margin: 80px; */
+    position: absolute;
+    box-shadow: 0 4px 60px #aaaaaa;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.signupFrame{
+    width: 340px;
+    height: auto;
+    /* top: 80px; */
+    margin: 80px 550px;
+    position: absolute;
+    box-shadow: 0 4px 60px #aaaaaa;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.signinHr, .signupHr{
+    border: 0;
+    margin: 0;
+    width: 340px;
+    height: 10px;
+    background: linear-gradient(270deg, #337788 0%, #66AABB 100%);
+    border-radius: 6px 6px 0px 0px;
+}
+.signinMain, .signupMain{
+    width: 310px;
+    height: auto;
+    margin: auto;
+}
+.signinText, .signupText{
+    width: 310px;
+    height: 27px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px auto 0;
+    color: #666666;
+    display: flex;
+    justify-content: center;
+}
+.close{
+    position: absolute;
+    right: 17px;
+    cursor: pointer;
+}
+.nameSignup, .accountSignin, .passwordSignin, .accountSignup, .passwordSignup {
+    width: 308px;
+    height: 45px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 15px auto 0;
+    
+}
+::placeholder{
+    width: 280px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.signinBtn, .signupBtn{
+    width: 310px;
+    height: 47px;
+    background-color: #448899;
+    border: 0;
+    margin: 15px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.signinBtnText, .signupBtnText{
+    width: 270px;
+    height: 27px;
+    font-weight: 400;
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+}
+.signinBtn:hover, .signupBtn:hover{
+    background-color: #5599aa;
+}
+.signinBtn:active, .signupBtn:active {
+    transform: translateY(1px) scale(.98);
+}
+.mess{
+    width: 310px;
+    height: 22px;
+    text-align: center;
+    margin: 10px auto;
+}
+.nosignin{
+    width: 310px;
+    height: 22px;
+    text-align: center;
+    margin: 10px auto 15px;
+    color: #666666;
+}
+.inUp{
+    color: #000;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #757575;
+    position: absolute;
+}
+.text{
+    width: 234px;
+    height: 20px;
+    margin: auto;
+    padding: 45px;
+    color: #fff;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+@media(max-width:1200px){
+    .titleAll{
+        width: 100%;
+    }
+    .titleHead{
+        margin: auto auto auto 10px;
+    }
+    .signlist {
+        justify-content: start;
+    }
+}
+@media(max-width:600px){
+    .titleAll{
+        min-width: 360px;
+    }
+    .titleHead{
+        margin: 10px 0 10px 10px;
+    }
+    .schedule{
+        margin: 20px 20px 20px 0;
+    }
+    .signinup{
+        margin: 20px 10px 20px 0px;
+    }
+}

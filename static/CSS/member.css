@@ -1,0 +1,83 @@
+.memberpageFrame{
+    width: 1200px;
+    height: 800px;
+    margin: 30px auto;
+}
+.memberpagePictureFrame{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.memberpageName, .memberpageEmail, .memberpagePhone{
+    width: 150px;
+    height: 30px;
+    font-size: 25px;
+    margin: 10px auto;
+    text-align: center;
+}
+.memberpageModifyName, .memberpageModifyEmail, .memberpageModifyPassword, .memberpageModifyavatar, .ok{
+    width: 56px;
+    height: 32px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 32px;
+    background-color: rgb(221, 219, 219);
+    cursor: pointer;
+}
+.memberpageModifyName:hover, .memberpageModifyEmail:hover,
+ .memberpageModifyPassword:hover, .memberpageModifyavatar:hover, .ok:hover{
+    background-color: rgb(204, 203, 203);
+}
+.memberpageModifyName:active, .memberpageModifyEmail:active,
+ .memberpageModifyPassword:active, .memberpageModifyavatar:active, .ok:active{
+    transform: translateY(1px) scale(.98);
+}
+.memberdata{
+    font-size: 25px;
+}
+.memberNameBack, .memberEmailBack, .memberPasswordBack, .memberAvatarBack{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(60, 60, 60, 0.5);
+    z-index: 3;
+}
+.memberModifyNameFrame{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 480px;
+    height: 250px;
+    position: absolute;
+    top: 80px;
+    box-shadow: 0 4px 60px #aaaaaa;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.memberMain{
+    width: 400px;
+    height: 180px;
+    margin: 10px auto;
+}
+.nameText{
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+.memberAfterName, .memberAfterEmail, .memberAfterPassword{
+    margin: 20px;
+    width: 340px;
+    height: 25px;
+}
+/* .memberAfterAvatar{
+
+} */
+.none{
+    display: none;
+}
+.output{
+    width: 150px;
+    height: 150px;
+}

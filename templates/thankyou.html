@@ -1,0 +1,52 @@
+{% extends "common.html" %}
+<head>
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="/CSS/thankyou.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/common.css">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+    <div class="back">
+        <h3 class="orderOk">預定訂單成功</h3>
+        <div class="order">
+            <hr>
+            <div class="detail">
+            <div class="label">訂單編號</div>
+            <div class="number"></div>
+            </div>
+            <div class="detail">
+            <div class="label">聯絡人姓名</div>
+            <div class="name"></div>
+            </div>
+            <div class="detail">
+            <div class="label">聯絡人信箱</div>
+            <div class="email"></div>
+            </div>
+            <div class="detail">
+            <div class="label">聯絡人電話</div>
+            <div class="phone"></div>
+            </div>
+            <div class="detail">
+            <div class="label">價格</div>
+            <div class="price"></div>
+            </div>
+            <div class="detail">
+            <div class="label">付款資訊</div>
+            <div class="status"></div>
+            </div>   
+            <hr> 
+        </div>
+        <div class="remember">請記住此編號，或到<a href="/member">會員中心</a>查詢歷史訂單</div>
+    </div>
+    <canvas id="fireworks"></canvas>
+    <footer class="footerorder">
+        <div class="text"> COPYRIGHT © 2021 台北一日遊</div>
+    </footer>
+    {% endblock %}
+    {% block js %}
+    <script src="/javascript/thankyou.js"></script>
+    <script src="/javascript/common.js"></script>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,89 @@
+{% extends "common.html" %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/CSS/common.css">
+<link rel="stylesheet" type="text/css" href="/CSS/member.css">
+{% endblock %}
+
+{% block content %}
+<div class="memberNameBack none">
+    <div class="memberModifyNameFrame" >
+        <div class="memberMain">
+            <div class="nameText">修改姓名<img src="/pic/icon_close.png" width="16px" height="16xp" class="close"></div>
+            <input type="text" class="memberAfterName" placeholder="暱稱">
+            <div>
+                <div class="ok">確認</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="memberEmailBack none">
+    <div class="memberModifyNameFrame" >
+        <div class="memberMain">
+            <div class="nameText">修改信箱
+                <img src="/pic/icon_close.png" width="16px" height="16xp" class="close">
+            </div>
+            <input type="text" class="memberAfterEmail" placeholder="信箱">
+            <div>
+                <div class="ok">確認</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="memberPasswordBack none">
+    <div class="memberModifyNameFrame" >
+        <div class="memberMain">
+            <div class="nameText">修改密碼
+                <img src="/pic/icon_close.png" width="16px" height="16xp" class="close">
+            </div>
+            <input type="text" class="memberAfterPassword" placeholder="信箱">
+            <div>
+                <div class="ok">確認</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="memberAvatarBack none">
+    <div class="memberModifyNameFrame" >
+        <div class="memberMain">
+            <div class="nameText">修改圖片
+                <img src="/pic/icon_close.png" width="16px" height="16xp" class="close">
+            </div>
+            <div style="display: flex;">
+                <img class="output"/>
+                <input type="file" class="memberAfterAvatar" accept="image/*" onchange="loadFile(event)">
+            </div>
+            <div>
+                <div class="okk">確認</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="memberpageFrame">
+    <div class="memberdata">會員資料 : </div>
+    <div class="memberpagePictureFrame">
+        <img src="" class="bob2" width="150px" height="150px">
+    </div>
+    <div>頭像</div> <div class="memberpageModifyavatar">更改</div>
+    <hr>
+    <div>
+        <div>姓名</div>
+        <div class="memberpageName">name</div>
+        <div class="memberpageModifyName">更改</div>
+        <hr>
+        <div>信箱</div>
+        <div class="memberpageEmail">Email@email.com</div>
+        <div class="memberpageModifyEmail">更改</div>
+        <hr>
+        <div>密碼</div>
+        <div class="memberpagePhone">********</div>
+        <div class="memberpageModifyPassword">更改</div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+<script src="/javascript/common.js"></script>
+<script src="/javascript/member.js"></script>
+{% endblock %}

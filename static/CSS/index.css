@@ -1,0 +1,323 @@
+.mainback{
+    width: 100%;
+    height:320px;
+    /* background-image: url(/taipei-day-trip/welcome.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.img{
+    min-width: 1200px;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+}
+.sloganlist{
+    width:1200px;
+    height: 169px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    top: -259px;
+}
+.slogan{
+    width: 1180px;
+    height: 149px;
+    margin: auto;
+}
+.search{
+    width:1180px;
+    height: 46px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.input{
+    max-width: 100%;
+    width: 400px;
+    height: 46px;
+    background-color: #fff;
+    border-radius: 5px 0px 0px 5px;
+}
+.inputText{
+    width: 370px;
+    height: 16px;
+    padding: 15px;
+    font-size: 14px;
+}
+.inputText:empty:before {
+    content: attr(placeholder);
+}
+.searchBtn{
+    width: 60px;
+    height: 46px;
+    background-color: #448899;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+.searchBtn:hover{
+    /* transform:translateY(-6px); */
+    /* box-shadow: 2px 2px 6px 2px #F0F0FF; */
+    background-color: #5599aa;
+}
+.searchBtn:active {
+    transform: translateY(1px) scale(.98);
+}
+
+.searchBtn>img{
+    width:30px;
+    height:30px;
+    margin: 8px 15px;
+}
+.searchBar{
+    width: 460px;
+    height: 213px;
+    position: relative;
+    top: -46px;
+    /* border: 1px solid; */
+    z-index: -1;
+}
+.categorylist{
+    width: 400px;
+    height: 162px;
+    /* border: 1px solid; */
+    box-shadow:0px 0px 20px #757575;
+    border-radius: 5px;
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 47px;
+    position: absolute;
+    z-index: 1;
+}
+.none{
+    display: none;
+}
+.items{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+}
+.items div{
+    width: 90px;
+    height: 20px;
+    display: flex;
+    margin: 11px 0 0 15px;
+    justify-content: center;
+}
+.items:hover{
+    background-color: #e8e8e8;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.attractions{
+    margin: 55px auto;
+    width: 1200px;
+    height: 100%;
+}
+.attractionsGroup{
+    margin: 15px auto;
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:30px 27px;
+}
+.frame{
+    width: 270px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid #E8E8E8;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+}
+.frame:hover{
+    opacity: 0.8;
+}
+.pic{
+    width: 100%;
+    height: 197px;
+    object-fit:cover;
+}
+.name{
+    width: 270px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 157px;
+}
+.nametext{
+    width: 250px;
+    height: 20px;
+    /* margin: 10px; */
+    padding: 10px;
+    text-align: start;
+    color :#fff;
+    font-size: 14px;
+}
+.context{
+    width: 270px;
+    height: 45px;
+    display: flex;
+}
+.mrt{
+    width: 125px;
+    height: 25px;
+    text-align: start;
+    margin: 10px 0px 10px 10px;
+}
+.cat{
+    width:125px;
+    height:25px;
+    text-align: end;
+    margin: 10px 10px 10px 0px;
+}
+@media(max-width:1200px){
+    .title-all{
+        width: 100%;
+    }
+    .title-head{
+        margin: auto auto auto 20px;
+    }
+    .signlist {
+        justify-content: start;
+    }
+    .img{
+        min-width: 360px;
+        max-width: 1200px;
+    }
+    .sloganlist{
+        width: 90%;
+        margin: auto auto auto 20px;
+    }
+    .slogan{
+        width: 100%;
+    }
+    .search{
+        width:100%;
+    }
+    .input{
+        max-width: 400px;
+        min-width: 255px;
+        width: 100%;
+    }
+    .attractions{
+        width: 100%;
+    }
+    .attractionsGroup{
+        width: 90%;
+        gap:10px 0;
+    }
+    .frame{
+        width: 48%;
+    }
+    .pic{
+        width: 100%;
+    }
+    .name{
+        width: 100%;
+    }
+    .context{
+        width: 100%;
+    }
+    .mrt{
+        width: 50%;
+    }
+    .cat{
+        width:50%;
+    }
+}
+
+@media(max-width:600px){
+    .title-all{
+        min-width: 360px;
+    }
+    .title-head{
+        margin: 10px 0 10px 10px;
+    }
+    .schedule{
+        margin: 20px 20px 20px 0;
+    }
+    .signinup{
+        margin: 20px 10px 20px 0px;
+    }
+    .mainback{
+        width: 100%;
+        height:320px;
+        /* background-image: url(/taipei-day-trip/welcome.png);
+        background-repeat: no-repeat;
+        background-size: cover; */
+    }
+    .img{
+        min-width: 360px;
+        object-fit: cover;
+        object-position: left;
+    }
+    .sloganlist{
+        min-width:320px;
+        margin: auto;
+    }
+    .slogan{
+        min-width: 320px;
+    }
+    .search{
+        min-width:320px;
+    }
+    .inputText{
+        min-width: 195px;
+    }
+    .searchBar {
+        min-width: 322px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+    }
+    .categorylist{
+        min-width: 322px;
+        width: 100%;
+    }
+    .items{
+        min-width: 96px;
+    }
+    .items div{
+        min-width: 66px;
+        height: 20px;
+        display: flex;
+        margin: 11px 0 0 15px;
+    }
+    .attractions{
+        min-width: 352px;
+    }
+    .attractionsGroup{
+        margin: 0;
+        min-width: 352px;
+        width: 100%;
+        justify-content: center;
+        /* gap:30px 0; */
+    }
+    .frame{
+        min-width: 320px;
+        width: 100%;
+        height: 280px;
+        margin: 15px;
+    }
+    .pic{
+        height: 235px;
+    }
+    .name{
+        min-width: 321px;
+        top: 195px;
+    }
+    .nametext{
+        min-width: 302px;
+        /* margin: 10px; */
+    }
+    .context{
+        min-width: 322px;
+    }
+}

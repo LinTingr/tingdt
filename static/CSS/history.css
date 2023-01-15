@@ -1,0 +1,125 @@
+h5{
+    margin: 0;
+    padding: 0;
+}
+.memberHistoryFrame{
+    width: 1200px;
+    height: 800px;
+    /* border: 1px solid; */
+    margin: 30px auto 30px;
+    display: flex;
+    background-color: #bed1d3;
+}
+.memberFrame{
+    width: 300px;
+    height: 800px;
+    /* border: 1px solid; */
+}
+.imageFrame{
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid; */
+    margin: 30px auto;
+}
+.avatar{
+    border-radius: 50%;
+}
+.memberName{
+    font-size: 22px;
+    text-align: center;
+}
+.historyFrame{
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid; */
+}
+.historyFrameAll{
+    width: 80%;
+    height: 720px;
+    /* border: 1px solid; */
+    margin: 30px auto;
+}
+.historymenu{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid;
+    display: flex;
+}
+.historyitem{
+    width: 140px;
+    height: 70px;
+    /* border: 1px solid; */
+    font-size: 22px;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+}
+.historyitem:hover{
+    background-color: #e5e5e5;
+}
+.borderbottom{
+    box-sizing: border-box;
+    border-bottom: 3px solid #3397cf;
+}
+.historyOrder{
+    width: 100%;
+    height: 660px;
+    margin: 15px auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.historyOrder::-webkit-scrollbar{
+    width: 10px;
+}
+.historyOrder::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border: 1px solid slategrey;
+  }
+.historyOrderFrame{
+    width: 95%;
+    height: 190px;
+    border: 1px solid;
+    margin: 0px auto 15px;
+    display: flex;
+    background-color: #fdeeda
+}
+.orderImage{
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid; */
+    display: flex;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.orderFrame{
+    width: 70%;
+    height: 175px;
+    /* border: 1px solid; */
+    margin: auto;
+    display: flex;
+}
+.orderNumber{
+    width: 100%;
+    height: auto;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.orderName{
+    width: 70%;
+    height: auto;
+    margin-left: 20px;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.orderItem{
+    width: 100%;
+    margin: 10px 5px 00;
+    font-size: 16px;
+    display: flex;
+}
+.number, .date, .price, .time, .attractionName{
+    margin: auto 5px;
+
+}

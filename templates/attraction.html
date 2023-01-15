@@ -1,0 +1,76 @@
+{% extends "common.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="/CSS/common.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/attraction.css">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+    <div class="main">
+        <div class="img">
+            <div class="page">
+                <div class="left" onclick="slide(-1)"><img src="/pic/btn_leftArrow.png" alt="" ></div>
+                <div class="bottom"></div>
+                <div class="right" onclick="slide(1)"><img src="/pic/btn_rightArrow.png" alt=""></div>
+            </div>
+        </div>
+            <!-- <img class="pic" src="" alt=""> -->
+        
+        <div class="set">
+            <div class="name"></div>
+            <div class="mrtCat"></div>
+            <div class="bookFrame">
+                <div class="book_frame_text1">訂購導覽行程</div>
+                <div class="book_frame_text2">以此景點為中心的一日行程，帶您探索城市角落故事</div>
+                <div class="date">
+                    <div class="date_time_price1">選擇日期 :</div>
+                    <div>
+                        <input type="date" id="start" name="trip-start" min="" value="" placeholder="yyy">
+                    </div>
+                </div>
+                <div class="time">
+                    <div class="date_time_price2">選擇時間 :</div>
+                    <div class="select">
+                        <div class="mor">
+                            <div class="morContainer">
+                                <div class="morBtnDiv">
+                                    <div class="morBtnShow"></div>
+                                </div>
+                            </div>
+                            <div class="morAft">上半天</div>
+                        </div>
+                        <div class="aft">
+                            <div class="aftContainer">
+                                <div class="aftBtnDiv" >
+                                    <div class="aftBtnShow" style="display:none;"></div>
+                                </div>
+                            </div>
+                            <div class="morAft">下半天</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="date_time_price3">導覽費用 :</div><div class="priceMoney"> 新台幣 2000元</div>
+                </div>
+                <div class="btn"><div>開始預約行程</div></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mainContent">
+        <div class="description">介紹</div>
+        <div class="address">景點地址 :</div>
+        <div class="addressCon"></div>
+        <div class="transport">交通方式 :</div>
+        <div class="transportCon"></div>
+    </div>
+    {% endblock %}
+    {% block js %}
+    <script src="/javascript/common.js"></script>
+    <script src="/javascript/attraction.js"></script>
+    {% endblock %}
+</body>
+</html>
