@@ -3,7 +3,6 @@ from flask_bcrypt import Bcrypt
 from model.user import User
 import jwt
 import boto3
-import numpy as np
 import os
 from dotenv import load_dotenv
 
@@ -11,7 +10,7 @@ load_dotenv()
 
 Access_key = os.getenv("Access_key")
 Access_secret = os.getenv("Access_secret")
-Bucket_name = os.getenv("AcBucket_namecess_key")
+Bucket_name = os.getenv("Bucket_name")
 
 memberpage = Blueprint("memberpage", __name__, static_folder="static", static_url_path="/")
 
@@ -33,7 +32,7 @@ def member():
 			aws_secret_access_key = access_secret
 		)
 
-		file_name = 'test2.txt'
+		file_name = 'file.jpg'
 
 		# Use the S3 client to get the file contents
 		response = client_s3.get_object(Bucket=bucket_name, Key=file_name)
@@ -66,29 +65,25 @@ def member():
 
 @memberpage.route("/api/member", methods=["POST"])
 def memberavatar():
-	access_key = "AKIATVB3VJIOISCXZW65"
-	access_secret = "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"
-	bucket_name = "mywebtingr"
+	access_key = Access_key
+	access_secret = Access_secret
+	bucket_name = Bucket_name
+	print(bucket_name)
 	s3 = boto3.resource(
 	    "s3",
 	    aws_access_key_id = access_key,
 	    aws_secret_access_key = access_secret
 	)
-	data = request.get_json()
+	avatar = request.get_json()["avatar"]
+	print(avatar)
 	path = 'output.txt'
-	f = open(path, 'w')
-	# byte = bytes(data["avatar"])
-	# print("byte",byte)
-	# with open("test.bin", "wb") as f:
-	# 	f.write(byte)
-	# new_array = np.array(data["avatar"])
-	# content = str(new_array)
-	f.write(data["avatar"])
-	f.close()
-	image = open(path, 'rb')
-	s3.Bucket(bucket_name).put_object(Key='test3.txt', Body=image)	
-	ddd = {
+	with open('output.txt', 'w') as f:
+		f.write(avatar)
+
+	with open('output.txt', 'rb') as image:
+		s3.Bucket(bucket_name).put_object(Key='file.jpg', Body=image)
+	result = {
 		"data":True
 	}
-	response = make_response(jsonify(ddd),200)
+	response = make_response(jsonify(result),200)
 	return response
